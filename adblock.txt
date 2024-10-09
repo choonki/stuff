@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: ChoonKi Filter List
 ! Expires: 7 days (update frequency)
-! Version: 1
+! Version: 2
 ! Last modified: 9 October 2024
 ! License: https://mit-license.org/
 ! Description: This filter disables some ads and annoyances.
@@ -12,6 +12,7 @@
 ##[class^="hd_pop"]
 
 etoland.co.kr##.scroll-down
+etoland.co.kr##.bottom-banner
 
 issuelink.co.kr###recommandVideo
 issuelink.co.kr##.container > .row:nth-of-type(2)
