@@ -5,6 +5,7 @@
 ! Last modified: 9 October 2024
 ! License: https://mit-license.org/
 ! Description: This filter disables some ads and annoyances.
+! Subscribe: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/choonki/stuff/master/adblock.txt&title=ChoonKi%20Filter%20List
 !-------------------------------------------------------------------------------
 
 ##[id^="hd_pop"]
