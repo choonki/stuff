@@ -1,11 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: ChoonKi Filter List
 ! Expires: 7 days (update frequency)
-! Version: 2
-! Last modified: 9 October 2024
-! License: https://mit-license.org/
+! Version: 1.0
 ! Description: This filter disables some ads and annoyances.
-! Subscribe: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/choonki/stuff/master/adblock.txt&title=ChoonKi%20Filter%20List
 !-------------------------------------------------------------------------------
 
 ##[id^="hd_pop"]
