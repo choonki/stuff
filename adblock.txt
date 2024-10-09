@@ -1,15 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: ChoonKi Filter List
 ! Expires: 3 hours (update frequency)
-! Version: 1.5
+! Version: 1.6
 ! Description: This filter disables some ads and annoyances.
 !-------------------------------------------------------------------------------
 
 ! Block "Sign in with Google"
 ||accounts.google.com/gsi/client$script,third-party
 
+
 ##[id^="hd_pop"]
+##[id^="banner"]
 ##[class^="hd_pop"]
+##[class^="banner"]
 
 etoland.co.kr##.scroll-down
 etoland.co.kr##.bottom-banner
