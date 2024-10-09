@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: ChoonKi Filter List
-! Expires: 7 days (update frequency)
-! Version: 1.4
+! Expires: 3 hours (update frequency)
+! Version: 1.5
 ! Description: This filter disables some ads and annoyances.
 !-------------------------------------------------------------------------------
 
