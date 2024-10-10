@@ -8,7 +8,6 @@
 ! Block "Sign in with Google"
 ||accounts.google.com/gsi/client$script,third-party
 
-
 ##[id^="hd_pop"]
 ##[id^="banner"]
 ##[class^="hd_pop"]
