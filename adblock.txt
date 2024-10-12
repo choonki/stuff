@@ -8,6 +8,7 @@
 ! Block "Sign in with Google"
 ||accounts.google.com/gsi/client$script,third-party
 
+! 공통(1)
 ##[id^="hd_pop"]
 ##[id^="banner"]
 ##[class^="hd_pop"]
@@ -15,6 +16,7 @@
 ##[id$="banner-view"]
 ##[class$="banner-view"]
 
+! 공통(2)
 ##[alt="banner.gif"]
 ##[rel*="sponsored"]
 ##[href^="/ad-"]
