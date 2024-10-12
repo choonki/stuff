@@ -22,12 +22,15 @@
 
 ###id_mbv
 
+! 루리웹
 ruliweb.com###fixed_ad
 
+! 이토랜드
 etoland.co.kr##.scroll-down
 etoland.co.kr##.bottom-banner
 etoland.co.kr##.todayBest_mobile
 
+! 인벤
 inven.co.kr###invenAppSuggestion
 inven.co.kr##.party-banner
 inven.co.kr##.inven-float-alarm
@@ -36,6 +39,7 @@ inven.co.kr##[id^="mobileTailAd"]
 inven.co.kr##[class^="mobileTopAd"]
 inven.co.kr##[class^="mobileTailAd"]
 
+! 이슈링크
 issuelink.co.kr###recommandVideo
 issuelink.co.kr##.container > .row:nth-of-type(2):not(:last-of-type)
 issuelink.co.kr##.container > .row:nth-of-type(3) tr:nth-of-type(6)
