@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: ChoonKi Filter List
 ! Expires: 3 hours (update frequency)
-! Version: 1.16
+! Version: 1.17
 ! Description: This filter disables some ads and annoyances.
 !-------------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ inven.co.kr##[class^="mobileTopAd"]
 inven.co.kr##[class^="mobileTailAd"]
 
 issuelink.co.kr###recommandVideo
-issuelink.co.kr##.container > .row:nth-of-type(2)
+issuelink.co.kr##.container > .row:nth-of-type(2):not(:last-of-type)
 issuelink.co.kr##.container > .row:nth-of-type(3) tr:nth-of-type(6)
 ! 이슈링크 - 타겟 변경
 issuelink.co.kr^$document,replace=/_self/_blank/
