@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: ChoonKi Filter List
 ! Expires: 3 hours (update frequency)
-! Version: 1.19
+! Version: 1.20
 ! Description: This filter disables some ads and annoyances.
 !-------------------------------------------------------------------------------
 
@@ -27,6 +27,13 @@
 
 ! 루리웹
 ruliweb.com###fixed_ad
+ruliweb.com###push_bar
+
+! 에펨
+fmkorea.com##.fm_alert
+
+! 애플
+discussionskorea.apple.com##div.notification
 
 ! 이토랜드
 etoland.co.kr##.scroll-down
