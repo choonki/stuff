@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: ChoonKi Filter List
 ! Expires: 3 hours (update frequency)
-! Version: 1.20
+! Version: 1.21
 ! Description: This filter disables some ads and annoyances.
 !-------------------------------------------------------------------------------
 
@@ -24,6 +24,9 @@
 
 ! 마나토끼
 ###id_mbv
+
+m.dcinside.com##[id$="tipbox"]
+m.news.nate.com##[id^=viewAppPop]
 
 ! 루리웹
 ruliweb.com###fixed_ad
@@ -51,6 +54,7 @@ inven.co.kr##[class^="mobileTailAd"]
 
 ! 이슈링크
 issuelink.co.kr###recommandVideo
+issuelink.co.kr###toast-container
 issuelink.co.kr##.container > .row:nth-of-type(2):not(:last-of-type)
 issuelink.co.kr##.container > .row:nth-of-type(3) tr:nth-of-type(6)
 issuelink.co.kr##.container > .row:last-of-type > div:not(:first-of-type)
