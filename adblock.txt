@@ -15,6 +15,7 @@
 ##[class^="banner"]
 ##[id$="banner-view"]
 ##[class$="banner-view"]
+###underGoodBtn_freeRecharge
 
 ! 공통(2)
 ##[alt="banner.gif"]
