@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: ChoonKi Filter List
 ! Expires: 3 hours (update frequency)
-! Version: 1.24
+! Version: 1.25
 ! Description: This filter disables some ads and annoyances.
 !-------------------------------------------------------------------------------
 
@@ -45,7 +45,7 @@ etoland.co.kr##.bottom-banner
 etoland.co.kr##.todayBest_mobile
 etoland.co.kr##[class*="google"]
 etoland.co.kr###underGoodBtn_freeRecharge
-
+etoland.co.kr##.write_content ~ div
 ! 인벤
 inven.co.kr###invenAppSuggestion
 inven.co.kr##.party-banner
