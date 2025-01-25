@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: Choonki's Own filter
 ! Expires: 3 hours (update frequency)
-! Version: 1
+! Version: 1.0
 !-------------------------------------------------------------------------------
 
 ! 공통(1)
