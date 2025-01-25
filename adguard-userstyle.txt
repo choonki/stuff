@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name    Choonki UserStyle
+@name    Choonki's Own style
 @version 1.0
 ==/UserStyle== */
 
