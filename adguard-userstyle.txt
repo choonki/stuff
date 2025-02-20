@@ -1,7 +1,27 @@
 /* ==UserStyle==
 @name    Choonki's Own style
-@version 1.0
+@version 1.1
 ==/UserStyle== */
+
+@-moz-document domain('issuelink.co.kr') {
+	.container {
+    	width: 100% !important;
+	}
+}
+
+@-moz-document domain('82cook.com') {
+	#column1 {
+	    display: none !important;
+	}
+	
+	#column2 {
+	    width: 100% !important;
+	}
+	
+	body > div {
+	    width: 100% !important;
+	}
+}
 
 @-moz-document domain('inven.co.kr') {
 	.inven-float-alarm,
