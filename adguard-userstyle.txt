@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name    Choonki's Own style
-@version 1.2
+@version 1.3
 ==/UserStyle== */
 
 @-moz-document domain('issuelink.co.kr') {
@@ -55,5 +55,11 @@
 	.fixed_ad_wrapper,
 	#fixed_ad, #push_bar {
 		display: none !important;
+	}
+}
+
+@-moz-document domain('arca.live') {
+	.content-wrapper {
+		width: 100% !important;
 	}
 }
