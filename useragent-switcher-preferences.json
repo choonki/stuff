@@ -1,7 +1,7 @@
 {
   "blacklist": [],
   "custom": {},
-  "last-update": 1740176842321,
+  "last-update": 1740176842322,
   "mode": "whitelist",
   "parser": {},
   "popup-browser": "Safari",
@@ -24,7 +24,7 @@
     "clien.net",
     "etoland.co.kr",
     "fmkorea.com",
-    "humoruniv.co.kr",
+    "humoruniv.com",
     "instiz.net",
     "inven.co.kr",
     "mlbpark.donga.com",
@@ -34,6 +34,8 @@
     "theqoo.net",
     "todayhumor.co.kr",
     "ygosu.com",
+    "arca.live",
+    "namu.wiki",
     "dcinside.com",
     "quasarzone.com",
     "blog.naver.com",
@@ -44,6 +46,6 @@
     "facebook.com",
     "instagram.com"
   ],
-  "json-guid": "1",
-  "json-forced": true
+  "json-guid": "de7ea77b-5707-4b55-a386-b0e783590ab0",
+  "json-forced": false
 }
