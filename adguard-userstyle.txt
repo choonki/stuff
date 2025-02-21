@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name    Choonki's Own style
-@version 1.3
+@version 1.4
 ==/UserStyle== */
 
 @-moz-document domain('issuelink.co.kr') {
@@ -60,6 +60,6 @@
 
 @-moz-document domain('arca.live') {
 	.content-wrapper {
-		width: 100% !important;
+		max-width: 100% !important;
 	}
 }
