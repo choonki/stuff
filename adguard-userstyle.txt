@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name    Choonki's Own style
-@version 1.6
+@version 1.7
 ==/UserStyle== */
 
 @-moz-document domain('issuelink.co.kr') {
@@ -63,6 +63,7 @@
 		display: none !important;
 	}
 	.content-wrapper {
+		display: block !important;
 		max-width: 100% !important;
 	}
 	.clearfix::after {
