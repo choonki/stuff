@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: Choonki's Own filter
 ! Expires: 3 hours (update frequency)
-! Version: 1.2
+! Version: 1.3
 !-------------------------------------------------------------------------------
 
 ! 쿠팡 검색시 ERR_HTTP2_PROTOCOL_ERROR 발생 방지
-@@||coupang.com^$important,stealth
+!@@||coupang.com^$important,stealth
 
 ! 공통(1)
 ##[id^="hd_pop"]
