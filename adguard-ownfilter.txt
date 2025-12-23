@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: Choonki's Own filter
 ! Expires: 3 hours (update frequency)
-! Version: 1.4
+! Version: 1.5
 !-------------------------------------------------------------------------------
 
 ! 쿠팡 검색시 ERR_HTTP2_PROTOCOL_ERROR 발생 방지
@@ -23,6 +23,7 @@
 
 ! 뉴토끼,마나토끼,북토끼
 [$domain=/^(new|mana|book)toki.*$/]###id_mbv
+||*^$document,replace=/booktoki[0-9]{3}/booktoki469/,domain=booktoki469.com
 
 ! 늑대닷컴
 [$domain=/^wfwf.*$/]##.top-banner
