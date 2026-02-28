@@ -2,7 +2,7 @@
 // @name        Google Search Various Ranges Mobile
 // @description Add more time ranges on Google search.
 // @match       *://www.google.com/search?*
-// @version     3.1.4
+// @version     3.1.5
 // @grant       none
 // ==/UserScript==
 
