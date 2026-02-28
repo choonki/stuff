@@ -2,7 +2,7 @@
 // @name        Google Search Various Ranges Mobile
 // @description Add more time ranges on Google search.
 // @match       *://www.google.com/search?*
-// @version     3.1.3
+// @version     3.1.4
 // @grant       none
 // ==/UserScript==
 
@@ -42,15 +42,15 @@
   };
   const PERIODS = [
     // You can edit or add below.
-    {
-      "in '90s": ['1/1/1990', '12/31/1999'],
-      "in '00s": ['1/1/2000', '12/31/2009'],
-      "in '10s": ['1/1/2010', '12/31/2019'],
-    },
-    {
-      "Before 2000": ['', '12/31/1999'],
-      "After 2000" : ['1/1/2000', ''],
-    },
+    //{
+    //  "in '90s": ['1/1/1990', '12/31/1999'],
+    //  "in '00s": ['1/1/2000', '12/31/2009'],
+    //  "in '10s": ['1/1/2010', '12/31/2019'],
+    //},
+    //{
+    //  "Before 2000": ['', '12/31/1999'],
+    //  "After 2000" : ['1/1/2000', ''],
+    //},
   ];
   const site = {
     targets: {
