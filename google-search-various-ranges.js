@@ -2,7 +2,7 @@
 // @name        Google Search Various Ranges
 // @description Add more time ranges on Google search.
 // @match       *://www.google.com/search?*
-// @version     3.1.1
+// @version     3.1.2
 // @grant       none
 // ==/UserScript==
 
@@ -12,44 +12,49 @@
   const DEBUG = false;
   if(window === top && console.time) console.time(SCRIPTID);
   const MS = 1, SECOND = 1000*MS, MINUTE = 60*SECOND, HOUR = 60*MINUTE, DAY = 24*HOUR, WEEK = 7*DAY, MONTH = 30*DAY, YEAR = 365*DAY;
-  const LANGS = ['en', 'ko', 'ja', 'fr', 'ru', 'zh', 'es', 'ar'];
+  const LANGS = ['en', 'ko'];
   const RANGES = {
     "qdr:h": {
-      "qdr:h":   ["Past hour",     "1 시간",  "1 時間以内",  "Moins d'une heure",   "За час",      "过去 1 小时内",  "Última hora",       "آخر ساعة"],
-      "qdr:h2":  ["Past 2 hours",  "2 시간",  "2 時間以内",  "Moins de 2 heures",   "За 2 часа",   "过去 2 小时内",  "Últimas 2 horas",   "آخر ساعتين"],
-      "qdr:h12": ["Past 12 hours", "12 시간", "12 時間以内", "Moins de 12 heures",  "За 12 часов", "过去 12 小时内", "Últimas 12 horas",  "آخر ١٢ ساعة"],
+      "qdr:h":   ["Past hour",     "1 시간"],
+      "qdr:h2":  ["Past 2 hours",  "2 시간"],
+      "qdr:h6":  ["Past 6 hours",  "6 시간"],
+      "qdr:h12": ["Past 12 hours", "12 시간"],
     },
     "qdr:d": {
-      "qdr:d":   ["Past day",      "1 일",  "1 日以内",    "Moins d'un jour",     "За 1 дня",    "过去 1 天内",    "Último 1 día",      "آخر 24 ساعة"],
-      "qdr:d2":  ["Past 2 days",   "2 일",  "2 日以内",    "Moins de 2 jours",    "За 2 дня",    "过去 2 天内",    "Últimos 2 días",    "آخر يومين"],
-      "qdr:d3":  ["Past 3 days",   "3 일",  "3 日以内",    "Moins de 3 jours",    "За 3 дня",    "过去 3 天内",    "Últimos 3 días",    "آخر ٣ أيام"],
+      "qdr:d":   ["Past day",      "1 일"],
+      "qdr:d2":  ["Past 2 days",   "2 일"],
+      "qdr:d3":  ["Past 3 days",   "3 일"],
+      "qdr:d5":  ["Past 5 days",   "5 일"],
     },
     "qdr:w": {
-      "qdr:w":   ["Past week",     "1 주",  "1 週間以内",  "Moins d'une semaine", "За неделю",   "过去 1 周内",    "Última semana",     "آخر أسبوع"],
-      "qdr:w2":  ["Past 2 weeks",  "2 주",  "2 週間以内",  "Moins de 2 semaines", "За 2 недели", "过去 2 周内",    "Últimas 2 semanas", "آخر أسبوعين"],
+      "qdr:w":   ["Past week",     "1 주"],
+      "qdr:w2":  ["Past 2 weeks",  "2 주"],
+      "qdr:w3":  ["Past 3 weeks",  "3 주"],
     },
     "qdr:m": {
-      "qdr:m":   ["Past month",    "1 개월", "1 か月以内",  "Moins d'un mois",     "За месяц",    "过去 1 个月内",  "Último mes",        "آخر شهر"],
-      "qdr:m2":  ["Past 2 months", "2 개월", "2 か月以内",  "Moins de 2 mois",     "За 2 месяца", "过去 2 个月内",  "Últimos 2 meses",   "آخر شهرين"],
-      "qdr:m6":  ["Past 6 months", "6 개월", "6 か月以内",  "Moins de 6 mois",     "За 6 месяца", "过去 6 个月内",  "Últimos 6 meses",   "آخر ٦ شهور"],
+      "qdr:m":   ["Past month",    "1 개월"],
+      "qdr:m2":  ["Past 2 months", "2 개월"],
+      "qdr:m3":  ["Past 3 months", "3 개월"],
+      "qdr:m6":  ["Past 6 months", "6 개월"],
     },
     "qdr:y": {
-      "qdr:y":   ["Past year",     "1 년", "1 年以内",    "Moins d'une an",      "За год",      "过去 1 年内",    "Último año",        "آخر سنة"],
-      "qdr:y2":  ["Past 2 years",  "2 년", "2 年以内",    "Moins de 2 ans",      "За 2 года",   "过去 2 年内",    "Últimos 2 años",    "آخر سنتين"],
-      "qdr:y5":  ["Past 5 years",  "5 년", "5 年以内",    "Moins de 5 ans",      "За 5 года",   "过去 5 年内",    "Últimos 5 años",    "آخر ٥ سنوات"],
+      "qdr:y":   ["Past year",     "1 년"],
+      "qdr:y2":  ["Past 2 years",  "2 년"],
+      "qdr:y3":  ["Past 3 years",  "3 년"],
+      "qdr:y5":  ["Past 5 years",  "5 년"],
     },
   };
   const PERIODS = [
     // You can edit or add below.
-    //{
-    //  "in '90s": ['1/1/1990', '12/31/1999'],
-    //  "in '00s": ['1/1/2000', '12/31/2009'],
-    //  "in '10s": ['1/1/2010', '12/31/2019'],
-    //},
-    //{
-    //  "Before 2000": ['', '12/31/1999'],
-    //  "After 2000" : ['1/1/2000', ''],
-    //},
+    {
+      "in '90s": ['1/1/1990', '12/31/1999'],
+      "in '00s": ['1/1/2000', '12/31/2009'],
+      "in '10s": ['1/1/2010', '12/31/2019'],
+    },
+    {
+      "Before 2000": ['', '12/31/1999'],
+      "After 2000" : ['1/1/2000', ''],
+    },
   ];
   const site = {
     targets: {
