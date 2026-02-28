@@ -2,7 +2,7 @@
 // @name        Google Search Various Ranges
 // @description Add more time ranges on Google search.
 // @match       *://www.google.com/search?*
-// @version     3.1.2
+// @version     3.1.3
 // @grant       none
 // ==/UserScript==
 
@@ -30,6 +30,7 @@
       "qdr:w":   ["Past week",     "1 주"],
       "qdr:w2":  ["Past 2 weeks",  "2 주"],
       "qdr:w3":  ["Past 3 weeks",  "3 주"],
+      "qdr:w4":  ["Past 4 weeks",  "4 주"],
     },
     "qdr:m": {
       "qdr:m":   ["Past month",    "1 개월"],
